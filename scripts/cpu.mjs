@@ -145,7 +145,8 @@ class CPU {
     };
 
     // Initialaize GET request to get out ROM
-    request.open("GET", "roms/" + romName);
+    request.open("GET", "./roms/" + `${romName}_file/` + romName);
+
     request.responseType = "arraybuffer";
 
     // send the GET request
@@ -439,7 +440,7 @@ class CPU {
             // if the bit (sprite) is not 0, render/erase the pixel
             if ((sprite & 0x80) > 0) {
               // if setPixel returns 1, which means pixel was erased, set vf to 1
-              if (this.renderer.setPixel(this.v[x] + col, this.v[y] + row)) {
+              if (this.renderer.setPixels(this.v[x] + col, this.v[y] + row)) {
                 // According to the technical reference, the x and y positions are located in Vx and Vy respectively. Add the col number to Vx and the row number to Vy, and you get the desired position to draw/erase a pixel.
 
                 // If setPixel returns 1, we erase the pixel and set VF to 1. If it returns 0, we don't do anything, keeping the value of VF equal to 0.

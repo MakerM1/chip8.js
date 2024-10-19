@@ -6,7 +6,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <canvas></canvas>
+    <div class="main-cont">
+      <div class="screen">
+        <div class="crt">
+          <div class="scanline"></div>
+          <div class="terminal">
+            <canvas></canvas>
+          </div>
+        </div>
+      </div>
+      <select name="games" id="gameSelect">
+        <option value="Nothing" selected>Nothing</option>
+        <option value="tetris.rom">TETRIS</option>
+        <option value="BLINKY">PACMAN</option>
+        <option value="BLITZ">BLITZ</option>
+      </select>
+    </div>
+    <div class="controls">
+      <h1>Controls:</h1>
+    </div>
 
     <script type="module" src="scripts/chip8.mjs"></script>
   </body>

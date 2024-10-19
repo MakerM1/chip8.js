@@ -61,7 +61,7 @@ class Renderer {
       //   if the value at this.display[i] == 1 redraw the said pixel
       if (this.display[i]) {
         // make pixel black
-        this.ctx.fillStyle = "#000";
+        this.ctx.fillStyle = "#249533";
 
         // Place a pixel at position (x, y) with a width and height of scale
         this.ctx?.fillRect(x, y, this.scale, this.scale);
