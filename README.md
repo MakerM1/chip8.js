@@ -42,6 +42,6 @@ I created this project to learn more about emulators and low-level computing. It
    * [Cowgod's Chip-8 Technical Reference v1.0](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM).
    * [CHIP-8 JavaScript Emulator Guide For Help](https://www.freecodecamp.org/news/creating-your-very-own-chip-8-emulator/)
 
-License
+## License
 
 This project is licensed under the MIT License.
