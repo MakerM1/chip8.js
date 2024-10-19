@@ -1,6 +1,8 @@
+import Keyboard from "./keyboard.mjs";
 import Renderer from "./renderer.mjs";
 
 const renderer = new Renderer(10);
+const keyboard = new Keyboard();
 
 let loop;
 
