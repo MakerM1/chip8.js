@@ -33,6 +33,7 @@ function loadControls(romName) {
         </p>
         `;
       });
+      select.style.display = "none";
     }
   };
 
