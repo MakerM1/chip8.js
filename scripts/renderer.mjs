@@ -52,27 +52,28 @@ class Renderer {
 
     // Loop through array display
     for (let i = 0; i < this.cols * this.rows; i++) {
-        // gets X pos of the pixel in array based on "i" 
+      // gets X pos of the pixel in array based on "i"
       let x = (i % this.cols) * this.scale;
 
-        // gets Y pos of the pixel in array based on "i" 
+      // gets Y pos of the pixel in array based on "i"
       let y = Math.floor(i / this.cols) * this.scale;
 
-    //   if the value at this.display[i] == 1 redraw the said pixel
+      //   if the value at this.display[i] == 1 redraw the said pixel
       if (this.display[i]) {
         // make pixel black
         this.ctx.fillStyle = "#000";
 
-         // Place a pixel at position (x, y) with a width and height of scale
+        // Place a pixel at position (x, y) with a width and height of scale
         this.ctx?.fillRect(x, y, this.scale, this.scale);
       }
     }
   }
 
-//   render a few pixels for test purposes
+  //   render a few pixels for test purposes
   testRender() {
     this.setPixels(0, 0);
     this.setPixels(5, 2);
+    this.setPixels(1, 3);
   }
 }
 
