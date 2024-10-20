@@ -9,6 +9,10 @@ This is a CHIP-8 emulator written in JavaScript as a fun side project to learn a
 * Handles input from a 16-key hexadecimal keypad
 * Supports timers for delay and sound
 
+## Demo
+
+Try out the live demo here: [CHIP-8 Emulator](https://makerm1.github.io/chip8.js/)
+
 ## Controls
 
 The CHIP-8's 16-key input is mapped to your keyboard:
@@ -35,7 +39,7 @@ CHIP-8 Key	Keyboard
 
 ## Why I Built This
 
-I created this project to learn more about emulators and low-level computing. It’s a great way to start building more complex emulators like the NES.
+I created this project to learn more about emulators and low-level computing. It's a great way to start building more complex emulators like the NES.
 
 ## Resources
 
